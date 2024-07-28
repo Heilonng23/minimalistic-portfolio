@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap");
+:root {
+  --inter: "Inter", "sans-serif";
+  --manrope: "Manrope", "sans-serif";
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+  font-family: var(--manrope);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  height: 100vh;
+  margin-bottom: 4800px;
+}
+
+.vertical-navbar {
+  padding: 20px;
+  border-right: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  padding-left: 0;
+}
+/* Styling for the navbar items */
+.vertical-navbar ul {
+  list-style-type: none;
+}
+
+.vertical-navbar li {
+  margin: 20px 0;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1em;
+  text-transform: lowercase;
+  font-size: 30px;
+}
+.vertical-navbar img {
+  width: 180px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.main-stuff {
+  margin-left: 10%;
+  width: 80%;
+  height: 100vh;
+}
+.main-content header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.main-content header .header {
+  font-size: 64px;
+  font-weight: 800;
+}
+.main-content header p {
+  font-size: 26px;
+}
+.stacks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-stack,
+.backend-stack,
+.database-stack {
+  display: flex;
+}
+.main-stack p,
+.backend-stack p,
+.database-stack P {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.my-stack,
+.my-backend-stack,
+.my-database-stack {
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.my-backend-stack,
+.my-database-stack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.my-stack li,
+.my-backend-stack li,
+.my-database-stack li,
+.experience li {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 0;
+}
+.yearandname {
+  display: flex;
+  margin: 10px 0;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.experience .box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.experience .box p {
+  margin: 0;
+}
+
+.experience .box-4 {
+  margin-top: 0;
+}
+
+.experience .yearandname {
+  display: flex;
+  margin: 10px 0;
+}
+
+.experience ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.experience li {
+  margin-bottom: 10px;
+}
+.experiences {
+  margin-bottom: 30px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects .title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.titleofproject {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.projects .project img {
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.description {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.project a {
+  text-decoration: none;
+  background-color: transparent;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.buttons button {
+  margin: 0 20px;
+}
+:root {
+  --color-text: 245, 245, 245;
+  --color-background: #000;
+  --color-main: #fff;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+
+[type="button"],
+button {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+
+.Button {
+  border: 2px solid var(--color-main);
+  border-radius: 4px;
+  padding: 2px 20px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  cursor: pointer;
+}
+
+.Button:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -40%;
+  width: 300%;
+  height: 400%;
+  background-color: var(--color-main);
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-45deg);
+}
+
+.Button:hover:before {
+  top: 0;
+  left: -160%;
+  width: 380%;
+  height: 800%;
+}
+
+span {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.Button:hover span {
+  top: -100% !important;
+}
+
+span:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+.stacksofproject {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.projectstack {
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.projectstack li {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 0;
+}
+.contactList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.contactList li {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 0;
+}
+.nameTitle {
+  margin: 0;
+  text-align: center;
+}
+.email {
+  border: 1px solid #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
