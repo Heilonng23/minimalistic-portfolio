@@ -180,16 +180,13 @@ export function Projects() {
             </p>
             <div className="buttons">
               <button type="button" className="Button">
-                <a
-                  href="https://fictionheaven-cfgx237k7-heilonng23s-projects.vercel.app/"
-                  target="_blank"
-                >
+                <a href="https://marvel-info-io.vercel.app/" target="_blank">
                   <span data-text=" Live Demo"> Live Demo </span>
                 </a>
               </button>
               <button type="button" className="Button">
                 <a
-                  href="https://github.com/Heilonng23/fictionheavencom"
+                  href="https://github.com/Heilonng23/marvel-info.io"
                   target="_blank"
                 >
                   <span data-text="Source Code"> Source Code </span>
