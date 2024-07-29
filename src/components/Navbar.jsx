@@ -23,7 +23,7 @@ export function Navbar() {
           </a>
         </p>
       </div>
-      <ul>
+      <ul className="mainNav">
         <li>
           <a href="#about-me">About Me</a>
         </li>

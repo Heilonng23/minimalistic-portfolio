@@ -304,17 +304,28 @@ span:after {
   margin: 0 10px;
   padding: 0;
 }
+
+.mainNav li:hover {
+  text-decoration: underline;
+}
+
 .contactList {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .contactList li {
   list-style-type: none;
   margin: 0 10px;
-  padding: 0;
+  padding: 10px 10px;
 }
+.contactList li:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
 .nameTitle {
   margin: 0;
   text-align: center;
@@ -323,7 +334,120 @@ span:after {
   border: 1px solid #fff;
   padding: 6px 10px;
   border-radius: 10px;
+  margin: 20px 0;
+}
+.email:hover {
+  filter: invert(1);
 }
 a {
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 100%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .vertical-navbar {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 10px;
+    border-right: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .vertical-navbar li {
+    margin: 10px 0px;
+    font-size: 20px;
+  }
+  .vertical-navbar img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .main-stuff {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .main-content header {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .main-content header .header {
+    font-size: 40px;
+  }
+  .main-content header p {
+    font-size: 18px;
+  }
+  .stacks {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main-stack,
+  .backend-stack,
+  .database-stack {
+    flex-direction: column;
+  }
+  .my-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .my-backend-stack,
+  .my-database-stack {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .experiences {
+    margin-bottom: 20px;
+  }
+  .projects .title {
+    font-size: 30px;
+  }
+  .titleofproject {
+    font-size: 24px;
+  }
+  .projects .project img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .buttons {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .buttons button {
+    margin: 10px 0;
+  }
+  .Button {
+    height: 30px;
+  }
+
+  .stacksofproject {
+    width: 100%;
+    margin: 0;
+  }
+  .projectstack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contactList {
+    flex-wrap: wrap;
+  }
+  .contactList li {
+    margin: 5px;
+  }
+
+  .nameTitle {
+    font-size: 24px;
+  }
+  .email {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
 }
