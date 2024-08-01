@@ -24,8 +24,8 @@ function MainContent() {
     <div className="main-content">
       <header id="about-me">
         <p className="header">hi, my name is Ibragim </p>
-        <p>i&apos;m a software developer</p>
-        <p>and i use </p>
+        <p style={{ fontSize: "26px" }}>i&apos;m a software developer</p>
+        <p style={{ fontSize: "26px" }}>and i use </p>
         <MainStack />
       </header>
     </div>
