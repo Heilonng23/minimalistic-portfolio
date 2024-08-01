@@ -73,6 +73,13 @@ html {
 }
 .main-content header p {
   font-size: 26px;
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    rgb(161, 161, 161) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: max(0em, calc(calc(1.3em - var(--framer-line-height, 1.3em)) / 2));
 }
 .stacks {
   display: flex;
@@ -143,6 +150,13 @@ html {
 
 .experience .box p {
   margin: 0;
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    rgb(161, 161, 161) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: max(0em, calc(calc(1.3em - var(--framer-line-height, 1.3em)) / 2));
 }
 
 .experience .box-4 {
@@ -193,6 +207,15 @@ html {
 .project a {
   text-decoration: none;
   background-color: transparent;
+}
+.projects p {
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    rgb(161, 161, 161) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: max(0em, calc(calc(1.3em - var(--framer-line-height, 1.3em)) / 2));
 }
 .buttons {
   display: flex;
