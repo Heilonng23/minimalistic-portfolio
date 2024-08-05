@@ -15,6 +15,7 @@ function App() {
         <Experience />
         <Projects />
         {/* <Education/> */}
+        <Footer />
       </div>
     </div>
   );
@@ -28,6 +29,13 @@ function MainContent() {
         <p style={{ fontSize: "26px" }}>and i use </p>
         <MainStack />
       </header>
+    </div>
+  );
+}
+function Footer() {
+  return (
+    <div style={{ margin: "30px", textAlign: "center" }}>
+      <p>&copy; no copyright for anything :)</p>
     </div>
   );
 }
