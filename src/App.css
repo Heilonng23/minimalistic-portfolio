@@ -84,7 +84,7 @@ html {
 .stacks {
   display: flex;
   justify-content: center;
-}
+  }
 .main-stack,
 .backend-stack,
 .database-stack {
